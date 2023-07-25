@@ -1,0 +1,730 @@
+img {
+    border-top: none;
+}
+
+body {
+    /* overflow-x: hidden; */
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #AFD3E2;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.black {
+    color: #AFD3E2;
+}
+
+/* header */
+
+.container header {
+    background-color: rgb(30, 30, 30);
+    position: fixed;
+    width: 100%;
+    font-family: 'Concert One', cursive;
+    font-size: 35 kapx;
+    z-index: 9999;
+}
+
+.container header .header-content {
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem 0;
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content {
+    background-color: #146C94;
+}
+
+.container-content {
+    justify-content: space-between;
+    padding: 6rem 0 0 0;
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+
+}
+
+.content .container-content section h3 {
+    color: white;
+    font-size: 1rem;
+}
+
+.content .container-content section h1 {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Concert One', cursive;
+}
+
+.content .container-content section h2 {
+    letter-spacing: 1px;
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #AFD3E2;
+    font-family: 'Concert One', cursive;
+}
+
+.content .container-content section p {
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.content .container-content section button {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: .2s;
+    margin: 1rem 0 2rem;
+}
+
+.content .container-content section button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+aside img {
+    width: 45vh;
+    padding: 0 0 2rem 0;
+}
+
+/* contact */
+.contact {
+    position: relative;
+}
+
+.contact ul {
+    padding: 5px;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 35px;
+    background-color: #19a7ce;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -3.3rem;
+}
+
+.contact ul li {
+    transition: .2s;
+}
+
+.contact ul li:hover {
+    margin-top: -5px;
+} 
+
+/* main : about */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    margin: 8vh auto;
+    align-items: center;
+}
+
+.about-hero-content, .about-desc-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.about-hero-content {
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+}
+
+.about-hero-content figure img {
+    width: 25vh;
+    border-radius: 15vh;
+    border: 8px solid #146C94;
+
+}
+
+.about-hero-content figcaption h2 {
+    font-family: 'Concert One', cursive;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3vh;
+}
+
+.about-hero-content figcaption h3 {
+    font-size: .8rem;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+main section.about .about-desc {
+    background-color: #F6F1F1;
+    width: 100%;
+}
+
+.about-desc-content {
+    margin: 5vh auto 0;
+    width: 100vw;
+}
+
+.about-desc-content h1, .skill h1 {
+    font-size: 5vh;
+    text-transform: uppercase;
+    font-family: 'Concert One', cursive;
+}
+
+hr {
+    border-top: 10px solid black;
+    border-bottom: none;
+    width: 20vh;
+    margin-bottom: 20px;
+}
+
+.about-desc-content p {
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 10px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.about-desc-content p:first-of-type {
+    margin-top: 0;
+}
+
+/* main : skill */
+
+.skill-content {
+    width: 80%;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.skill-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.skill-content ul li img {
+    width: 200px;
+    padding: 10px;
+}
+
+/* footer  */
+footer {
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    line-height: 8vh;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container header {
+        background-color: rgb(30, 30, 30);
+        position: fixed;
+        width: 100%;
+        font-family: 'Concert One', cursive;
+        font-size: 40px;
+        z-index: 9999;
+    }
+
+    .container header .header-content {
+        width: 80%;
+        margin: auto;
+        padding: 1.5rem 0;
+    }
+    .container-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    aside img {
+        width: 25vh;
+    }
+
+    .contact ul {
+        top: -6rem;
+        width: 350px;
+        height: 120px;
+        border-radius: 45px;
+    }
+
+    .contact ul li img {
+        width: 100px;
+    }
+
+    .about-hero-content figure img {
+        width: 20vh;
+        border-radius: 15vh;
+        border: 8px solid #146C94;
+    }
+
+    .about-hero-content figcaption h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-hero-content {
+        margin-top: 2vh;
+        margin-bottom: 10vh;
+    }
+
+    .about-hero-content figcaption h3 {
+        font-size: 1rem;
+    }
+
+    .about-desc-content h1, .skill h1 {
+        font-size: 3vh;
+    }
+
+    hr {
+        border-top: 8px solid black;
+        border-bottom: none;
+        width: 12vh;
+        margin-bottom: 20px;
+    }
+
+    .about-desc-content p {
+        font-size: 20px;
+    }
+
+    .skill-content ul {
+        flex-direction: row;
+    }
+
+    .skill-content ul li img {
+        width: 180px;
+        padding: 10px;
+    }
+
+    .container-content {
+        padding: 18rem 0 12rem 0;
+    }
+
+    .container-header {
+        font-size: 35px;
+    }
+
+    .content .container-content section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .content .container-content section h1 {
+        font-size: 4rem;
+    }
+    
+    .content .container-content section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content .container-content section p {
+        font-size: 1.2rem;
+    }
+    
+    .content .container-content section button {
+        width: 8rem;
+    }
+
+    aside img {
+        width: 350px;
+        padding: 0 0 2rem 0;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container header {
+        font-size: 40px;
+    }
+
+    .container-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    aside img {
+        width: 25vh;
+    }
+
+    .contact ul {
+        top: -9rem;
+        width: 350px;
+        height: 120px;
+        border-radius: 45px;
+    }
+
+    .contact ul li img {
+        width: 100px;
+    }
+
+    .about-hero-content figure img {
+        width: 30vh;
+        border-radius: 20vh;
+        border: 8px solid #146C94;
+    }
+
+    .about-hero-content figcaption h2 {
+        font-size: 2.6rem;
+    }
+
+    .about-hero-content {
+        margin-top: 2vh;
+        margin-bottom: 10vh;
+    }
+
+    .about-hero-content figcaption h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-desc-content h1, .skill h1 {
+        font-size: 4vh;
+    }
+
+    hr {
+        border-top: 8px solid black;
+        border-bottom: none;
+        width: 12vh;
+        margin-bottom: 20px;
+    }
+
+    .about-desc-content p {
+        font-size: 20px;
+    }
+
+    .skill-content ul {
+        flex-direction: row;
+    }
+
+    .skill-content ul li img {
+        width: 180px;
+        padding: 10px;
+    }
+
+    .container-content {
+        padding: 18rem 0 12rem 0;
+    }
+
+    .container-header {
+        font-size: 35px;
+    }
+
+    .content .container-content section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .content .container-content section h1 {
+        font-size: 4rem;
+    }
+    
+    .content .container-content section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content .container-content section p {
+        font-size: 1.2rem;
+    }
+    
+    .content .container-content section button {
+        width: 8rem;
+    }
+
+    aside img {
+        width: 350px;
+        padding: 0 0 2rem 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container header {
+        background-color: rgb(30, 30, 30);
+        position: fixed;
+        width: 100%;
+        font-family: 'Concert One', cursive;
+        font-size: 40px;
+        z-index: 9999;
+    }
+
+    .container header .header-content {
+        width: 80%;
+        margin: auto;
+        padding: 1.5rem 0;
+    }
+    .container-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    aside img {
+        width: 25vh;
+    }
+
+    .contact ul {
+        top: -8rem;
+        width: 320px;
+        height: 80px;
+        border-radius: 45px;
+    }
+
+    .contact ul li img {
+        width: 70px;
+    }
+
+    .about-hero-content figure img {
+        width: 40vh;
+        border-radius: 25vh;
+        border: 8px solid #146C94;
+    }
+
+    .about-hero-content figcaption h2 {
+        font-size: 2.3rem;
+    }
+
+    .about-hero-content {
+        margin-top: 2vh;
+        margin-bottom: 10vh;
+    }
+
+    .about-hero-content figcaption h3 {
+        font-size: 1rem;
+    }
+
+    .about-desc-content h1, .skill h1 {
+        font-size: 6vh;
+    }
+
+    hr {
+        border-top: 8px solid black;
+        border-bottom: none;
+        width: 12vh;
+        margin-bottom: 20px;
+    }
+
+    .about-desc-content p {
+        font-size: 20px;
+    }
+
+    .skill-content ul {
+        flex-direction: row;
+    }
+
+    .skill-content ul li img {
+        width: 180px;
+        padding: 10px;
+    }
+
+    .container-content {
+        padding: 7rem 0 1rem 0;
+    }
+
+    .container-header {
+        font-size: 35px;
+    }
+
+    .content .container-content section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .content .container-content section h1 {
+        font-size: 4rem;
+    }
+    
+    .content .container-content section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content .container-content section p {
+        font-size: 1.2rem;
+    }
+    
+    .content .container-content section button {
+        width: 8rem;
+    }
+
+    aside img {
+        width: 350px;
+        padding: 0 0 2rem 0;
+    }
+
+    .container header {
+        font-size: 25px;
+    }
+
+    footer {
+        height: 10vh;
+        line-height: 10vh;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container header {
+        background-color: rgb(30, 30, 30);
+        position: fixed;
+        width: 100%;
+        font-family: 'Concert One', cursive;
+        font-size: 60px;
+        z-index: 9999;
+    }
+
+    .container header .header-content {
+        width: 60%;
+        margin: auto;
+        padding: 1.5rem 0;
+    }
+    .container-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    aside img {
+        width: 25vh;
+    }
+
+    .contact ul {
+        top: -8rem;
+        width: 320px;
+        height: 80px;
+        border-radius: 45px;
+    }
+
+    .contact ul li img {
+        width: 70px;
+    }
+
+    .about-hero-content figure img {
+        width: 40vh;
+        border-radius: 25vh;
+        border: 8px solid #146C94;
+    }
+
+    .about-hero-content figcaption h2 {
+        font-size: 2.3rem;
+    }
+
+    .about-hero-content {
+        margin-top: 2vh;
+        margin-bottom: 10vh;
+    }
+
+    .about-hero-content figcaption h3 {
+        font-size: 1rem;
+    }
+
+    .about-desc-content h1, .skill h1 {
+        font-size: 8vh;
+    }
+
+    hr {
+        border-top: 8px solid black;
+        border-bottom: none;
+        width: 12vh;
+        margin-bottom: 20px;
+    }
+
+    .about-desc-content p {
+        font-size: 25px;
+    }
+
+    .skill-content ul {
+        flex-direction: row;
+    }
+
+    .skill-content ul li img {
+        width: 180px;
+        padding: 10px;
+    }
+
+    .container-content {
+        padding: 7rem 0 1rem 0;
+    }
+
+    .container-header {
+        font-size: 35px;
+    }
+
+    .content .container-content section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .content .container-content section h1 {
+        font-size: 4rem;
+    }
+    
+    .content .container-content section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content .container-content section p {
+        font-size: 1.2rem;
+    }
+    
+    .content .container-content section button {
+        width: 8rem;
+    }
+
+    aside img {
+        width: 350px;
+        padding: 0 0 2rem 0;
+    }
+
+    .container header {
+        font-size: 40px;
+    }
+
+    footer {
+        height: 10vh;
+        line-height: 10vh;
+    }
+
+    .skill-content {
+        width: 60%;
+    }
+
+    .about-desc-content p {
+        width: 60%;
+    }
+
+    .about-hero-content {
+        width: 60%;
+    }
+
+    .container-content {
+        width: 60%;
+    }
+}
